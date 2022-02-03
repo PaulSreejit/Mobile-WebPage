@@ -133,6 +133,7 @@ h1{
 
 #ratings span:last-of-type:hover{
     color: white;
+    cursor: pointer;
 }
 
 .spacing > .rupees{
