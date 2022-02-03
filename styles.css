@@ -22,7 +22,7 @@ body{
 }
 
 .outer-panel, .inner-panel {
-    display: block;
+    display: flex;
 }
 
 .outer-panel {
@@ -55,7 +55,6 @@ body{
 
 #shopping-cart{
     position: absolute;
-    top: 0;
     right: 0;
 }
 
@@ -334,4 +333,34 @@ h1{
 #footer .material-icons{
     font-size: 13px;
     padding-right: 5px;
+}
+
+/* Media query for responsive site */
+@media (min-width: 768px)
+{
+    .inner-panel {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        width: 50%;
+        height: 50%;    
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h1{
+        margin: 20px;
+        display: inline-block;
+    }
+
+    #dispimg{
+        position: relative;
+        margin-left: 120px;
+        width: 300px;
+    }
 }
