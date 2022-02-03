@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Belgrano&family=DM+Sans:wght@700&family=DM+Serif+Display&family=Montserrat:wght@700&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
@@ -17,8 +19,8 @@
     <div class="outer-panel">
         <div class="inner-panel">
             <div id=icons>
-                <span id="hamburger-menu" class="material-icons">menu</span>
-                <span id="shopping-cart" class="material-icons">shopping_cart</span>
+                <a href="nav-menu"><span id="hamburger-menu" class="material-icons">menu</span></a>
+                <a href="cart_page"><span id="shopping-cart" class="material-icons-outlined">shopping_cart</span></a>
             </div>
             <div class="dashed-line" class="spacing"></div>
             <div><img id="dispimg" class="spacing" src="img.png" alt=""></div>
@@ -43,7 +45,7 @@
                 <span class="rupees"><i class="material-icons">currency_rupee</i>1299</span>
             </div>
             <div id="offer-zone" class="spacing">
-                <div id="offer1">
+                <div id="offer1" class="options-sections">
                     <div><i class="material-icons">star</i>&nbsp;Most popular&nbsp;<i class="material-icons">star</i>
                     </div>
                     <div>1 Months pack (4 tubes)</div>
@@ -54,7 +56,8 @@
                         <div><i class="material-icons">currency_rupee</i>795</div>
                     </div>
                 </div>
-                <div id="offer2">
+                <span id="tick-mark-offer1"></span>
+                <div id="offer2" class="options-sections">
                     <div>3 Months pack (12 tubes)</div>
                     <div>Savings: <span class="rupees"><i class="material-icons">currency_rupee</i>100</span></div>
                     <div>12% saved</div>
@@ -63,12 +66,14 @@
                         <div><i class="material-icons">currency_rupee</i>999</div>
                     </div>
                 </div>
+                <span id="tick-mark-offer2"></span>
             </div>
             <footer id="footer" class="spacing">
                 <div><i class="material-icons">shopping_cart</i>Add to Cart</div>
             </footer>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
